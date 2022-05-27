@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>CMD-乱码处理</title>
+    <link href="/2022/05/22/CMD-%E4%B9%B1%E7%A0%81%E5%A4%84%E7%90%86/"/>
+    <url>/2022/05/22/CMD-%E4%B9%B1%E7%A0%81%E5%A4%84%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>今天使用bat文件出现乱码现象，经查证，本次问题出现的原因是CMD命令行窗口字符编码不匹配。<br>CMD使用的是936编码，修改为UTF-8即可修复<br>获以下方法解决，推荐方法二</p><h3 id="方法一-CHCP"><a href="#方法一-CHCP" class="headerlink" title="方法一 CHCP"></a>方法一 CHCP</h3><p>在CMD命令行窗口使用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">chcp 65001<br></code></pre></td></tr></table></figure><p>此方法待CMD命令行窗口重启后，恢复为原来的编码</p><h3 id="方法二-注册表"><a href="#方法二-注册表" class="headerlink" title="方法二 注册表"></a>方法二 注册表</h3><p>在注册表编辑器中搜索</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs text">HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe<br></code></pre></td></tr></table></figure><p>更改CodePage为65001（十进制）</p><h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>部分字符编码对应代码：<br>65001——UTF-8<br>936——简体中文<br>950——繁体中文<br>437——美国/加拿大英语<br>932——日文<br>949——韩文<br>866——俄文</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>CMD</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>VMware-CentOS 7</title>
+    <link href="/2022/05/01/VMware-CentOS-7/"/>
+    <url>/2022/05/01/VMware-CentOS-7/</url>
+    
+    <content type="html"><![CDATA[<p>下载VMware 16 Pro 官方<br><a href="https://pan.suzo.top/Software/VMware-workstation-full-16.1.2-17966106.exe">点击此处下载</a></p><p>输入激活码<br>ZF3R0-FHED2-M80TY-8QYGC-NPKYF</p><p>下载CentOS镜像</p><p><a href="http://isoredirect.centos.org/centos/7/isos/x86_64/">官方下载</a></p><p><a href="http://mirrors.aliyun.com/centos/7/isos/x86_64/">阿里镜像站</a></p><p>各个版本的ISO镜像文件说明：</p><p>CentOS-7-x86_64-DVD-1708.iso 标准安装版（推荐）<br>CentOS-7-x86_64-Everything-1708.iso 完整版，集成所有软件（以用来补充系统的软件或者填充本地镜像）<br>CentOS-7-x86_64-LiveGNOME-1708.iso GNOME桌面版<br>CentOS-7-x86_64-LiveKDE-1708.iso KDE桌面版<br>CentOS-7-x86_64-Minimal-1708.iso 精简版，自带的软件最少<br>CentOS-7-x86_64-NetInstall-1708.iso 网络安装版（从网络安装或者救援系统）</p><p>(镜像下载及说明转载至 CentOS镜像下载 - 老村长的文章 - 知乎<br><a href="https://zhuanlan.zhihu.com/p/104118123">https://zhuanlan.zhihu.com/p/104118123</a>)</p><p>DVD ISO : 旨在刻录到CD上。然后使用该CD启动计算机.<br>Everything ISO : 对完整版安装盘的软件进行补充，集成所有软件<br>Minimal ISO : 只有命令行模式，没有图形管理界面。这个镜像只是一个非常基本的系统，具有一个功能系统所需的最少的软件包<br>(版权属于: 技术客 原文地址: <a href="https://www.sunjs.com/article/detail/f9786c1cc37e4a9392a4ec6c0b1967ef.html">https://www.sunjs.com/article/detail/f9786c1cc37e4a9392a4ec6c0b1967ef.html</a>)</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>随机图片API</title>
+    <link href="/2022/04/30/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87API/"/>
+    <url>/2022/04/30/%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87API/</url>
+    
+    <content type="html"><![CDATA[<h2 id="利用-relit-中的PHP搭建随机图片API"><a href="#利用-relit-中的PHP搭建随机图片API" class="headerlink" title="利用[relit]中的PHP搭建随机图片API"></a>利用[relit]中的PHP搭建随机图片API</h2><p>必需：<br>一个GIthub账号<br>一个relit账号<br>了解git、php</p><h2 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h2><p> 创建GIthub仓库</p><p> 仓库必要文件</p><blockquote><p>.replit<br>index.php<br>img.txt</p></blockquote><p>.replit源码如下</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs text">run = &quot;php -S 0.0.0.0:8000 -t .&quot;<br>entrypoint = &quot;index.php&quot;<br></code></pre></td></tr></table></figure><p>index.php源码如下</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs PHP"><span class="hljs-meta">&lt;?php</span><br><span class="hljs-comment">//存有美图链接的文件名img.txt</span><br><span class="hljs-variable">$filename</span> = <span class="hljs-string">&quot;img.txt&quot;</span>;<br><span class="hljs-keyword">if</span>(!file_exists(<span class="hljs-variable">$filename</span>))&#123;<br>    <span class="hljs-keyword">die</span>(<span class="hljs-string">&#x27;文件不存在&#x27;</span>);<br>&#125;<br> <br><span class="hljs-comment">//从文本获取链接</span><br><span class="hljs-variable">$pics</span> = [];<br><span class="hljs-variable">$fs</span> = fopen(<span class="hljs-variable">$filename</span>, <span class="hljs-string">&quot;r&quot;</span>);<br><span class="hljs-keyword">while</span>(!feof(<span class="hljs-variable">$fs</span>))&#123;<br>    <span class="hljs-variable">$line</span>=trim(fgets(<span class="hljs-variable">$fs</span>));<br>    <span class="hljs-keyword">if</span>(<span class="hljs-variable">$line</span>!=<span class="hljs-string">&#x27;&#x27;</span>)&#123;<br>        array_push(<span class="hljs-variable">$pics</span>, <span class="hljs-variable">$line</span>);<br>    &#125;<br>&#125;<br> <br><span class="hljs-comment">//从数组随机获取链接</span><br><span class="hljs-variable">$pic</span> = <span class="hljs-variable">$pics</span>[array_rand(<span class="hljs-variable">$pics</span>)];<br> <br><span class="hljs-comment">//返回指定格式</span><br><span class="hljs-variable">$type</span>=<span class="hljs-variable">$_GET</span>[<span class="hljs-string">&#x27;type&#x27;</span>];<br><span class="hljs-keyword">switch</span>(<span class="hljs-variable">$type</span>)&#123;<br> <br><span class="hljs-comment">//JSON返回</span><br><span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;json&#x27;</span>:<br>    header(<span class="hljs-string">&#x27;Content-type:text/json&#x27;</span>);<br>    <span class="hljs-keyword">die</span>(json_encode([<span class="hljs-string">&#x27;pic&#x27;</span>=&gt;<span class="hljs-variable">$pic</span>]));<br> <br><span class="hljs-keyword">default</span>:<br>    <span class="hljs-keyword">die</span>(header(<span class="hljs-string">&quot;Location: <span class="hljs-subst">$pic</span>&quot;</span>));<br>&#125;<br> <br><span class="hljs-meta">?&gt;</span><br></code></pre></td></tr></table></figure><p> relit拉取仓库并部署</p><h2 id="所遇到的问题"><a href="#所遇到的问题" class="headerlink" title="所遇到的问题"></a>所遇到的问题</h2><p>1、</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>relit</tag>
+      
+      <tag>php</tag>
+      
+      <tag>API</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>bat-睡眠模式</title>
+    <link href="/2022/04/22/bat-%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F/"/>
+    <url>/2022/04/22/bat-%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F/</url>
+    
+    <content type="html"><![CDATA[<p>rundll32.exe powrprof.dll,SetSuspendState Sleep<br>使用bat使计算机启动睡眠模式<br>避免WIN+L的锁屏界面</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>bat</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>OD-OneManager部署</title>
+    <link href="/2022/03/03/OD-OneManager%E9%83%A8%E7%BD%B2/"/>
+    <url>/2022/03/03/OD-OneManager%E9%83%A8%E7%BD%B2/</url>
+    
+    <content type="html"><![CDATA[<p>github开源链接<a href="https://github.com/qkqpttgf/OneManager-php">OneManager-php</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>RM2100-记OpenWRT</title>
+    <link href="/2022/02/13/RM2100-%E8%AE%B0OpenWRT/"/>
+    <url>/2022/02/13/RM2100-%E8%AE%B0OpenWRT/</url>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.jianshu.com/p/59d69708ffe1">LEDE / OPENWRT 自动清理内存</a></p><p><a href="https://www.right.com.cn/FORUM/thread-2670532-1-1.html">openwrt负载均衡最详细设置—小白进阶篇</a></p><p><a href="https://www.hangge.com/blog/cache/detail_608.html">OpenWrt负载的含义（1分钟，5分钟，15分钟平均负载）</a></p><p><a href="https://blog.csdn.net/ZYF8985957/article/details/106606890">Openwrt手动释放内存</a></p><p><a href="https://cloud.tencent.com/developer/article/1495825">Linux如何查看CPU信息，Linux查看CPU个数和核心数，Linux查看CPU使用率和运行位数</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Log</tag>
+      
+      <tag>RM2100</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>关于播放器的解决方案</title>
+    <link href="/2021/12/12/%E5%85%B3%E4%BA%8E%E6%92%AD%E6%94%BE%E5%99%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <url>/2021/12/12/%E5%85%B3%E4%BA%8E%E6%92%AD%E6%94%BE%E5%99%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    
+    <content type="html"><![CDATA[<p>关于win10播放器需要安装插件拓展<br>ms-windows-store://pdp/?ProductId=9n4wgh0z6vhq</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Log</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo-自定义滚动条</title>
+    <link href="/2021/12/11/Hexo-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%BB%9A%E5%8A%A8%E6%9D%A1/"/>
+    <url>/2021/12/11/Hexo-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%BB%9A%E5%8A%A8%E6%9D%A1/</url>
+    
+    <content type="html"><![CDATA[<h3 id="自定义滚动条1"><a href="#自定义滚动条1" class="headerlink" title="自定义滚动条1"></a>自定义滚动条<a href="https://forsure.live/customize-some-effects-for-hexofluid/#refer-anchor-1">1</a></h3><span id="more"></span><p>效果见右侧滚动条(不支持Firefox和Internet Explorer)</p><ol><li>在<code>博客目录\themes\fluid\source\css</code>中新建<code>scrollbar.css</code></li></ol><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-comment">/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/</span>  <br>::-webkit-scrollbar &#123;  <br>    width: <span class="hljs-number">4px</span>;  <br>    <span class="hljs-attribute">height</span>: <span class="hljs-number">4px</span>;  <br>    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#181C27</span>;    <br>&#125;  <br> <br><span class="hljs-comment">/*定义滚动条轨道 内阴影+圆角*/</span>  <br>::-webkit-scrollbar-track &#123;  <br>    box-shadow: inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">6px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.3</span>);  <br>    -webkit-<span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">6px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.3</span>);  <br>    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;  <br>    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#181C27</span>;<br>&#125;  <br>  <br><span class="hljs-comment">/*定义滑块 内阴影+圆角*/</span>  <br>::-webkit-scrollbar-thumb &#123;  <br>    border-radius: <span class="hljs-number">10px</span>;  <br>    <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">6px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,.<span class="hljs-number">3</span>);  <br>    -webkit-<span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">6px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.3</span>);  <br>    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#AAA</span>;  <br>&#125;<br><br><span class="hljs-comment">/*鼠标在滑块上方时滑块变色*/</span>  <br>::-webkit-scrollbar-thumb:hover &#123;<br>    background-color: <span class="hljs-number">#808080</span>;<br>&#125;<br>Copy<br></code></pre></td></tr></table></figure><ol><li>在Fluid主题配置文件中添加自定义CSS(195行处)</li></ol><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">custom_css:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">/css/scrollbar.css</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Log</tag>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>密码测试</title>
+    <link href="/2021/11/23/%E5%AF%86%E7%A0%81%E6%B5%8B%E8%AF%95/"/>
+    <url>/2021/11/23/%E5%AF%86%E7%A0%81%E6%B5%8B%E8%AF%95/</url>
+    
+    <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="bdf0d0b5b90cc23b5080be50ae4efd98c2d14c775163b07992381deb76c057bd">f4c73a862a2125cd56a57e2829e83dd3e1122d0e533ace435fd3928c85f01526fa363a60d572e6521910ea2cf21aead5</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-default">      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>      </label>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Log</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>第一篇Hexo blog文章</title>
+    <link href="/2021/08/14/%E7%AC%AC%E4%B8%80%E7%AF%87Hexo-blog%E6%96%87%E7%AB%A0/"/>
+    <url>/2021/08/14/%E7%AC%AC%E4%B8%80%E7%AF%87Hexo-blog%E6%96%87%E7%AB%A0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo-记Blog的搭建</title>
+    <link href="/2021/08/14/Hexo-%E8%AE%B0Blog%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    <url>/2021/08/14/Hexo-%E8%AE%B0Blog%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
+    
+    <content type="html"><![CDATA[<p>搭建条件</p><span id="more"></span><p>1、git的安装</p><p><a href="https://git-scm.com/downloads">Git - Downloads (git-scm.com)</a></p><p>2、node.js的安装</p><p><a href="http://nodejs.cn/download/">下载 | Node.js 中文网 (nodejs.cn)</a></p><p>3、</p><p>4、</p><h3 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npx hexo new <span class="hljs-string">&quot;My New Post&quot;</span> <span class="hljs-comment">#或</span><br>npx hexo new post <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><h3 id="启用本地服务"><a href="#启用本地服务" class="headerlink" title="启用本地服务"></a>启用本地服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npx hexo server <span class="hljs-comment">#或</span><br>npx hexo s<br></code></pre></td></tr></table></figure><h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npx hexo generate <span class="hljs-comment">#或</span><br>npx hexo g<br></code></pre></td></tr></table></figure><h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npx hexo deploy <span class="hljs-comment">#或</span><br>npx hexo d<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Log</tag>
+      
+      <tag>Hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
