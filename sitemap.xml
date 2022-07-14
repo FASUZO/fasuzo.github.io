@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://fasuzo.github.io/2022/05/01/VMware-CentOS-7/</loc>
+    
+    <lastmod>2022-07-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://fasuzo.github.io/2022/04/22/bat-%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F/</loc>
     
     <lastmod>2022-05-22</lastmod>
@@ -23,15 +32,6 @@
     <loc>https://fasuzo.github.io/2021/12/12/%E5%85%B3%E4%BA%8E%E6%92%AD%E6%94%BE%E5%99%A8%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
     
     <lastmod>2022-05-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://fasuzo.github.io/2022/05/01/VMware-CentOS-7/</loc>
-    
-    <lastmod>2022-05-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -108,14 +108,14 @@
   </url>
   
   <url>
-    <loc>https://fasuzo.github.io/tags/Hexo/</loc>
+    <loc>https://fasuzo.github.io/tags/CMD/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fasuzo.github.io/tags/CMD/</loc>
+    <loc>https://fasuzo.github.io/tags/Hexo/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
