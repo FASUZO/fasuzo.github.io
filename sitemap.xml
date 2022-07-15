@@ -4,7 +4,7 @@
   <url>
     <loc>https://fasuzo.github.io/2022/05/01/VMware-CentOS-7/</loc>
     
-    <lastmod>2022-07-14</lastmod>
+    <lastmod>2022-07-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -94,64 +94,64 @@
 
   <url>
     <loc>https://fasuzo.github.io/</loc>
-    <lastmod>2022-07-14</lastmod>
+    <lastmod>2022-07-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://fasuzo.github.io/tags/Log/</loc>
-    <lastmod>2022-07-14</lastmod>
+    <loc>https://fasuzo.github.io/tags/CMD/</loc>
+    <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://fasuzo.github.io/tags/CMD/</loc>
-    <lastmod>2022-07-14</lastmod>
+    <loc>https://fasuzo.github.io/tags/Log/</loc>
+    <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fasuzo.github.io/tags/Hexo/</loc>
-    <lastmod>2022-07-14</lastmod>
+    <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fasuzo.github.io/tags/RM2100/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fasuzo.github.io/tags/bat/</loc>
-    <lastmod>2022-07-14</lastmod>
+    <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fasuzo.github.io/tags/relit/</loc>
-    <lastmod>2022-07-14</lastmod>
+    <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fasuzo.github.io/tags/php/</loc>
-    <lastmod>2022-07-14</lastmod>
+    <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://fasuzo.github.io/tags/API/</loc>
-    <lastmod>2022-07-14</lastmod>
+    <lastmod>2022-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fasuzo.github.io/tags/bat/</loc>
+    <lastmod>2022-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
