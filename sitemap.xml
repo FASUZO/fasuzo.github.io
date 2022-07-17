@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://fasuzo.github.io/2022/05/01/VMware-CentOS-7/</loc>
+    <loc>https://fasuzo.github.io/2021/08/14/Hexo-%E8%AE%B0Blog%E7%9A%84%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2022-07-17</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://fasuzo.github.io/2021/08/14/Hexo-%E8%AE%B0Blog%E7%9A%84%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://fasuzo.github.io/2022/05/01/VMware-CentOS-7/</loc>
     
     <lastmod>2022-07-17</lastmod>
     
@@ -122,35 +122,7 @@
   </url>
   
   <url>
-    <loc>https://fasuzo.github.io/tags/bat/</loc>
-    <lastmod>2022-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://fasuzo.github.io/tags/RM2100/</loc>
-    <lastmod>2022-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fasuzo.github.io/tags/relit/</loc>
-    <lastmod>2022-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fasuzo.github.io/tags/php/</loc>
-    <lastmod>2022-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://fasuzo.github.io/tags/API/</loc>
     <lastmod>2022-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -172,6 +144,34 @@
   
   <url>
     <loc>https://fasuzo.github.io/tags/Linux/</loc>
+    <lastmod>2022-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fasuzo.github.io/tags/bat/</loc>
+    <lastmod>2022-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fasuzo.github.io/tags/relit/</loc>
+    <lastmod>2022-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fasuzo.github.io/tags/php/</loc>
+    <lastmod>2022-07-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://fasuzo.github.io/tags/API/</loc>
     <lastmod>2022-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
