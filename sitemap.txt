@@ -1,3 +1,4 @@
+https://fasuzo.github.io/2022/07/19/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90-Sandboxie%EF%BC%88%E6%B2%99%E7%9B%92%EF%BC%89/
 https://fasuzo.github.io/2021/08/14/Hexo-%E8%AE%B0Blog%E7%9A%84%E6%90%AD%E5%BB%BA/
 https://fasuzo.github.io/2022/05/01/VMware-CentOS-7/
 https://fasuzo.github.io/2022/04/22/bat-%E7%9D%A1%E7%9C%A0%E6%A8%A1%E5%BC%8F/
@@ -17,6 +18,8 @@ https://fasuzo.github.io/tags/VMware/
 https://fasuzo.github.io/tags/CentOS/
 https://fasuzo.github.io/tags/Linux/
 https://fasuzo.github.io/tags/bat/
+https://fasuzo.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/
+https://fasuzo.github.io/tags/Windows/
 https://fasuzo.github.io/tags/relit/
 https://fasuzo.github.io/tags/php/
 https://fasuzo.github.io/tags/API/

@@ -6,7 +6,7 @@
   <link href="https://fasuzo.github.io/atom.xml" rel="self"/>
   
   <link href="https://fasuzo.github.io/"/>
-  <updated>2022-05-22T05:52:51.798Z</updated>
+  <updated>2022-07-18T18:15:29.780Z</updated>
   <id>https://fasuzo.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件推荐-Sandboxie（沙盒）</title>
+    <link href="https://fasuzo.github.io/2022/07/19/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90-Sandboxie%EF%BC%88%E6%B2%99%E7%9B%92%EF%BC%89/"/>
+    <id>https://fasuzo.github.io/2022/07/19/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90-Sandboxie%EF%BC%88%E6%B2%99%E7%9B%92%EF%BC%89/</id>
+    <published>2022-07-18T18:11:26.000Z</published>
+    <updated>2022-07-18T18:15:29.780Z</updated>
+    
+    <content type="html"><![CDATA[<p>Sandboxie 是一款非常经典老牌的沙盒程序/沙盘工具，功能类似以前的“影子系统”，它可以在 Windows 上创造出一个虚拟的程序运行环境，并牢牢地限制住软件只能在其“沙盒环境”范围内运行，与真实系统完全隔离开来。</p><p>[下载地址]<a href="https://sandboxie-plus.com/downloads/">https://sandboxie-plus.com/downloads/</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Sandboxie 是一款非常经典老牌的沙盒程序/沙盘工具，功能类似以前的“影子系统”，它可以在 Windows 上创造出一个虚拟的程序运行环境，并牢牢地限制住软件只能在其“沙盒环境”范围内运行，与真实系统完全隔离开来。&lt;/p&gt;
+&lt;p&gt;[下载地址]&lt;a href=&quot;http</summary>
+      
+    
+    
+    
+    
+    <category term="软件推荐" scheme="https://fasuzo.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    <category term="Windows" scheme="https://fasuzo.github.io/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>CMD-乱码处理</title>
